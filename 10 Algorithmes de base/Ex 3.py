@@ -1,12 +1,9 @@
 def delta(tab: list)->list:
-    liste = []
+    liste = tab[0]
     if tab == []:
         return None
     for indice in range(len(tab)):
-        if indice == 0:
-            liste.append(tab[indice])
-        else:
-            liste.append(tab[indice] - tab[indice - 1])
+        liste.append(tab[indice] - tab[indice - 1])
     return liste
     
 
