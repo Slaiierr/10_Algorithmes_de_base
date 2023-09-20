@@ -1,9 +1,7 @@
 def rechercheMinMax(tab: list)-> dict:
-    dico = {}
     if tab == []:
-        dico['min'] = None
-        dico['max'] = None
-        return dico
+        return {'min': None, 'max': None}
+    dico = {}
     dico['min'] = tab[0]
     dico['max'] = tab[0]
     for elt in tab:
